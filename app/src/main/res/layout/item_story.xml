@@ -1,0 +1,59 @@
+<!--
+  ~         DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+  ~                     Version 2, December 2004
+  ~
+  ~  Copyright (C) 2015 XiNGRZ <xxx@oxo.ooo>
+  ~
+  ~  Everyone is permitted to copy and distribute verbatim or modified
+  ~  copies of this license document, and changing it is allowed as long
+  ~  as the name is changed.
+  ~
+  ~             DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+  ~    TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+  ~
+  ~   0. You just DO WHAT THE FUCK YOU WANT TO.
+  ~
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:elevation="2dp"
+    android:foreground="?selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="17sp"
+            tools:text="我是一个很长的标题我非常非常的长我想要换行万一这真的是太长装不下了怎么办？我是一个很长的标题我非常非常的长我想要换行万一这真的是太长装不下了怎么办？我是一个很长的标题我非常非常的长我想要换行万一这真的是太长装不下了怎么办？我是一个很长的标题我非常非常的长我想要换行万一这真的是太长装不下了怎么办？" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            tools:src="#999" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="#22000000" />
+
+</FrameLayout>

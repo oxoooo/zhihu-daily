@@ -1,0 +1,55 @@
+<!--
+  ~         DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+  ~                     Version 2, December 2004
+  ~
+  ~  Copyright (C) 2015 XiNGRZ <xxx@oxo.ooo>
+  ~
+  ~  Everyone is permitted to copy and distribute verbatim or modified
+  ~  copies of this license document, and changing it is allowed as long
+  ~  as the name is changed.
+  ~
+  ~             DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+  ~    TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+  ~
+  ~   0. You just DO WHAT THE FUCK YOU WANT TO.
+  ~
+  -->
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:layout_scrollFlags="scroll|enterAlways" />
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>
